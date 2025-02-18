@@ -4,13 +4,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $age = htmlspecialchars($_POST['age']);
 
-    // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Invalid email format";
         exit;
     }
 
-    // Validate age
     if (!is_numeric($age) || $age <= 0) {
         echo "Invalid age";
         exit;

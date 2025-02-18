@@ -5,13 +5,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" || $_SERVER["REQUEST_METHOD"] == "GET")
     $email = htmlspecialchars($_REQUEST['email']);
     $age = htmlspecialchars($_REQUEST['age']);
 
-    // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Invalid email format";
         exit;
     }
 
-    // Validate age
+    
     if (!is_numeric($age) || $age <= 0) {
         echo "Invalid age";
         exit;
