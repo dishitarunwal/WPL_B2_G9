@@ -1,0 +1,12 @@
+/foodiehub
+   ├── config.php            // MySQLi connection settings
+   ├── pdo_config.php        // PDO connection settings (if preferred)
+   ├── index.php             // Homepage (can include header/footer, etc.)
+   ├── login.php             // Login form and processing
+   ├── register.php          // User registration form
+   ├── profile.php           // User profile (view & update)
+   ├── update_preferences.php// Processing dietary preferences updates
+   ├── recipes.php           // Lists recipes (trending/featured)
+   ├── cuisines.php          // Page to display all cuisines
+   ├── order_history.php     // Page to list previous orders
+   └── assets/               // CSS, JS, images, etc.
